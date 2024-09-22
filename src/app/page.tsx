@@ -42,7 +42,7 @@ export default function Home() {
           <Button variant="outline" size="icon" className="mr-2" onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
-          <Sheet>
+          {/* <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
                 <Menu className="h-5 w-5" />
@@ -53,7 +53,7 @@ export default function Home() {
                 <NavItems />
               </div>
             </SheetContent>
-          </Sheet>
+          </Sheet> */}
         </div>
       </header>
       <main className="container mx-auto px-4 py-12">

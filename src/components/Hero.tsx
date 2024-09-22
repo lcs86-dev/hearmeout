@@ -1,6 +1,7 @@
 import { ArrowRight, Clock, Shield } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,10 +10,12 @@ export default function Hero() {
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground font-heading">Your Safe Space for Support, Anytime</h2>
         <p className="text-xl mb-8 text-muted-foreground">Connect anonymously with empathetic listeners and find the emotional support you need, on your schedule.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Start Your Journey
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/signup-login">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              Start Your Journey
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
           {/* <Button size="lg" variant="outline" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground border-secondary">Explore as a Listener</Button> */}
         </div>
         <div className="flex justify-center space-x-8 mb-8">
